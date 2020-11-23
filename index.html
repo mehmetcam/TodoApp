@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div id="app" >
+        <div id="form" >
+            <h1 id="baslik">Notes Vos ToDos!</h1>
+            <p id="inst">Pour noter votre todo dans sur la liste vous pouver taper <span id="sekil">enter</span>. 
+            Pour supprimer la note vous pouvez taper <span id="sekil">ESC</span> et pour les ToDos terminés vous pouvez
+            <span id="sekil">double-clicker</span> dessus ou supprimer completement en clickant sur <span id="sekil"><i class='fas fa-times'></i></span>. </p>
+            <input id="input" placeholder="vous pouvez envoyer avec enter et vider l'input avec ESC" type="">
+            <div id="buttons">
+            <button id="sendIt" onclick="noteIt(),getTodosFromStorage(), addTodoToStorage()" >Note It</button>
+            <button id="clear" onclick="clearIt()">Clear</button>
+            <button id="deleteAll"  >Clear All</button>
+            </div>
+            
+            <ul id="listem" >
+                <li>Try It ! <i class='fas fa-times'></i></li>
+                <li>Fais la vaisselle <i class='fas fa-times'></i></li>
+                <li>ne me quitte pas <i class='fas fa-times'></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

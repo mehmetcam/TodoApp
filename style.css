@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #E1E1E1;
+}
+
+#app{
+    width: 100%;
+    /* height: 100%; */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+#form{
+    /*  */
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#baslik{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#input{
+    height: 3rem;
+    width: 90%;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    
+
+}
+
+#buttons{
+    /* padding: 10px; */
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    padding-left: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#buttons>button{
+    width: 100px;
+    height: 2rem;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+ul{
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    width: 90%;
+    
+    
+}
+
+li{
+    margin-bottom: 10px;
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 0.7;
+    flex-grow: 5;
+    
+}
+
+
+
+
+
+li:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+i{
+    opacity: 0.5;
+    
+}
+i:hover{
+    opacity: 1;
+}
+
+#inst{
+    margin-top: 20px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+
+#inst:hover{
+    font-size: 1.2rem;
+}
+
+#sekil{
+    font-weight: bolder;
+}
